@@ -1,0 +1,22 @@
+>>> safe_print_list = __import__('0-safe_print_list').safe_print_list
+>>> my_list = [1, 2, 3, 4, 5]
+
+>>> safe_print_list(my_list, 2)
+12
+2
+>>> safe_print_list(my_list, 5)
+12345
+5
+>>> safe_print_list(my_list, 10)
+12345
+5
+>>> safe_print_list([], 3)
+0
+>>> safe_print_list(["a", "b", "c"], 2)
+ab
+2
+>>> safe_print_list(["hello", "world"], 5)
+helloworld
+2
+>>> safe_print_list([1, 2, 3], 0)
+0
