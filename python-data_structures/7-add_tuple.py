@@ -15,4 +15,4 @@ def validate_tuple(_tuple=()):
     elif len(_tuple) > 2:
         _tuple = (_tuple[0], _tuple[1])
 
-    return _tuple
+    return _tuple 
