@@ -1,13 +1,14 @@
-#!/usr/bin/python3
-"""Difines asquare class with a pivate size attribute."""
+k#!/usr/bin/python3
+"""
+Define a class that represents a square.
+"""
 
 
+class Square:
+    '''
+    A simple class that represents a square.
+    Currently, it has one attribute: size.
+    '''
 
-class square:
-    """Represents a square."""
-
-
-
-    def __init__(self,size):
-       """initaialze the square with a private size."""
-       self.__size = size
+    def __init__(self, size):
+        self.__size = size
