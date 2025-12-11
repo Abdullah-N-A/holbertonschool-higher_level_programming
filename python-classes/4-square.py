@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a square with size validation, getter, setter, and area method."""
+"""Defines a square with private size, getter, setter, and area method."""
 
 class Square:
     """Represents a square."""
@@ -14,7 +14,7 @@ class Square:
 
     @property
     def size(self):
-        """Return the size of the square."""
+        """Retrieve the current size of the square."""
         return self.__size
 
     @size.setter
