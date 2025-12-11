@@ -1,4 +1,4 @@
-kk#!/usr/bin/python3
+#!/usr/bin/python3
 """Defines a square with size validation, getter, setter, and area method."""
 
 class Square:
