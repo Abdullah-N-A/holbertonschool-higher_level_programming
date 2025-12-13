@@ -5,13 +5,13 @@
 class Rectangle:
     """Class that defines a rectangle and counts instances."""
 
-    number_of_instances = 0  # public class attribute
+    number_of_instances = 0 
 
     def __init__(self, width=0, height=0):
         """Initialize a Rectangle instance."""
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1  # increment counter
+        Rectangle.number_of_instances += 1 
 
     @property
     def width(self):
