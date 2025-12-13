@@ -5,7 +5,7 @@
 class Rectangle:
     """Class that defines a rectangle and counts instances."""
 
-    number_of_instances = 0  # public class attribute
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initialize a Rectangle instance."""
@@ -60,10 +60,11 @@ class Rectangle:
     def __repr__(self):
         """Return a string representation that can recreate the instance."""
         return "Rectangle({}, {})".format(
-            self.__width, self.__height
+            self.__width,
+            self.__height
         )
 
     def __del__(self):
         """Print a message when an instance is deleted and decrement counter."""
-        print("Bye rectangle...")
+        print("Bye rectangle" + "...")
         Rectangle.number_of_instances -= 1
