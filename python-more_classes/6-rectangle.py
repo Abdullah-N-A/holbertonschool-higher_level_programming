@@ -5,13 +5,13 @@
 class Rectangle:
     """Class that defines a rectangle and counts instances."""
 
-    number_of_instances = 0 
+    number_of_instances = 0  # public class attribute
 
     def __init__(self, width=0, height=0):
         """Initialize a Rectangle instance."""
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1 
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -59,7 +59,7 @@ class Rectangle:
 
     def __repr__(self):
         """Return a string representation that can recreate the instance."""
-        return f"Rectangle({self.__width}, {self.__height})"
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
         """Print a message when an instance is deleted and decrement counter."""
